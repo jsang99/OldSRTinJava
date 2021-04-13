@@ -1,0 +1,36 @@
+* sample srt.cat file
+* first word is key word
+* STATION: latitude longitude west in degrees
+* SAT: satellite ID then longitude west
+* SOU: source ra, dec, name, epoch
+STATION 42.5 71.5 Haystack
+* source coords epoch 1950 unless specified
+SOU 05 31 30  21 58 00 Crab
+SOU 05 32 48  -5 27 00 Orion
+SOU 05 42 00  -1 00 00 S8
+SOU 23 21 12  58 44 00 Cass
+SOU 00 00 00  00 00 00 Sun
+SOU 17 42 54 -28 50 00 SgrA
+SOU 06 29 12  04 57 00 Rosett
+SOU 18 17 30 -16 18 00 M17
+SOU 20 27 00  41 00 00 CygEMN
+SOU 00 00 00  00 00 00 Moon
+SOU 21 12 00  48 00 00 G90
+SOU 05 40 00  29 00 00 G180
+SOU 12 48 00  28 00 00 GNpole
+SOU 00 39 00  40 30 00 Androm
+SOU 05 14 12  18 44 00 AC1
+GALACTIC 10 1 RC_CLOUD
+AZLIMITS 95.0 265.0 /* mid az range is south */
+ELLIMITS 4.0 160.0  /*  elevation limit south - north */
+COMM 1              /* COM 1 */
+CALCONS 1.0         /* gain correction constant to put power in units of K */
+BEAMWIDTH 7.0       /* 3 dB antenna beamwidth in degrees  - used to set offsets for scans */
+MANCAL 1            /* 0 or absence indicates automated cal vane */
+NOISECAL 200.0      /* initial value for noise diode calibration */
+*DIGITAL             /* enable for digital receiver only  */
+TOLERANCE 5         /* optional max error in counts */
+*COUNTPERSTEP 50     /* optional stepped antenna motion */ 
+*RECORDFORM TAB VLSR /* optional tabs between fields and VLSR in output */
+*ELBACKLASH 3.0      /* optional correction for elevation backlash */
+
